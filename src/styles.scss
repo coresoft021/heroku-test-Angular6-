@@ -1,1 +1,197 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background: #272b36;
+  text-align: center;
+  .row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    width: 60%;
+    margin: auto;
+    padding: 10px 10px 30px;
+    > .col > {
+      img {
+        width: 130px;
+      }
+      .title {
+        font-family: 'Oxygen', sans-serif;
+        text-align: center;
+        color: white;
+        margin: auto;
+        padding-top: 10px;
+      }
+    }
+  }
+  .gray-space {
+    width: 100%;
+    margin-top: 0;
+    height: 10px;
+    background-color: #4a5061;
+    border: none;
+  }
+  .btn-orange {
+    background-color: #e05c2a;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .home {
+    background-image: url("../src/assets/img/img1.jpg");
+    /* The image used */
+    min-height: 700px;
+    .logo {
+      padding-top: 20px;
+      img {
+        width: 12%;
+      }
+    }
+    .introduction {
+      margin-top: 150px;
+      .title {
+        font-family: 'Oxygen', sans-serif;
+        color: white;
+        width: 80%;
+        margin: auto;
+        font-size: 60px;
+      }
+      .subtitle-container {
+        padding-top: 50px;
+      }
+      .subtitle {
+        font-family: 'Oxygen', sans-serif;
+        color: white;
+        width: 80%;
+        margin: auto;
+        font-size: 20px;
+      }
+    }
+    .btn-container {
+      padding-top: 120px;
+      padding-bottom: 50px;
+    }
+  }
+  .tools .title-container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    .title {
+      font-family: 'Oxygen', sans-serif;
+      color: white;
+      margin: auto;
+      width: 50%;
+      font-size: 27px;
+    }
+  }
+  .orange-statement {
+    background-color: #e05c2a;
+    .text-container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .text {
+        font-family: 'Oxygen', sans-serif;
+        margin: auto;
+        color: white;
+        width: 70%;
+        font-size: 30px;
+      }
+    }
+  }
+  .demo-form {
+    .title-container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .title {
+        font-family: 'Oxygen', sans-serif;
+        color: white;
+        font-size: 25px;
+      }
+    }
+    .subtitle-container {
+      padding-bottom: 60px;
+      .subtitle {
+        font-family: 'Oxygen', sans-serif;
+        margin: auto;
+        color: white;
+        width: 50%;
+        font-size: 20px;
+      }
+    }
+    .form-container {
+      width: 40%;
+      margin: auto;
+      input[type=text], textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      label {
+        font-family: 'Oxygen', sans-serif;
+        color: white;
+        text-align: left;
+        display: inherit;
+        margin-top: 20px;
+      }
+      .btn-container {
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    .row {
+      display: grid;
+      grid-template-columns: auto;
+      > .col {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .home {
+      .logo img {
+        width: 50%;
+      }
+      .introduction .title {
+        font-size: 30px;
+        width: 95%;
+      }
+    }
+    .tools .title-container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .title {
+        width: 95%;
+        font-size: 20px;
+      }
+    }
+    .orange-statement .text-container .text {
+      width: 95%;
+      font-size: 20px;
+    }
+    .demo-form {
+      .title-container .title {
+        font-size: 20px;
+      }
+      .subtitle-container .subtitle {
+        width: 90%;
+        font-size: 18px;
+      }
+      .form-container {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}
